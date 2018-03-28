@@ -1,0 +1,49 @@
+﻿<!-- Members : Abhinav Pathak, Ashley Gallert -->
+<Window x:Class="DrivingTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingTest"
+        mc:Ignorable="d"
+        x:Name="DriverLicenceTest"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Driving Test" Height="700" Width="1000" Loaded="DriverLicenceTest_Loaded">
+    <Viewbox>
+        <Grid>
+            <Grid HorizontalAlignment="Center" Height="988" VerticalAlignment="Center" Width="1492" Margin="1,0,1,3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <Label Style="{StaticResource LabelTitle}" Content="Driving Test" HorizontalAlignment="Center" Height="50" Grid.Row="1" VerticalAlignment="Center" Width="214" Margin="132,0" />
+                <Border BorderBrush="Black" BorderThickness="0,0,0,1" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="1492" Grid.Row="1">
+                    <Grid>
+                        <Image x:Name="ConfigTool_Form" HorizontalAlignment="Right" VerticalAlignment="Center" Source="Images/Gear.png"  Height="50" Width="66" Opacity="0" 
+                MouseDown="ConfigTool_Form_MouseDown" />
+                    </Grid>
+                </Border>
+                <Label Style="{StaticResource LabelDesign}" Grid.Row="2" Content="Read each question carefully. Each question only has one correct answer. Press SUBMIT when completed test at the bottom of the page. " Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="1189" Height="50" Grid.RowSpan="3" />
+                <Grid Grid.Row="6" HorizontalAlignment="Center" Height="73" VerticalAlignment="Center" Width="1452" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <Grid HorizontalAlignment="Center" Height="848" Grid.Row="5" VerticalAlignment="Center" Width="1452">
+                    <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" HorizontalAlignment="Center" Height="848" VerticalAlignment="Center" Width="1452"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Viewbox>
+</Window>

@@ -1,0 +1,86 @@
+﻿<Page x:Class="AddressBook.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AddressBook"
+          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="390"
+      Title="AddPage">
+    <Page.Resources>
+        <local:StringToImageConverter x:Key="StringToImageConverter" />
+    </Page.Resources>
+    <Canvas Height="600" Width="390" Margin="0 0 20 0">
+
+        <materialDesign:Card Padding="10" Background="#F44336" Width="400" Height="100" Canvas.Top="0">
+            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" Foreground="white" FontSize="35" VerticalAlignment="Bottom" HorizontalAlignment="Left">Add Person</TextBlock>
+        </materialDesign:Card>
+
+        <materialDesign:Card Padding="5" Height="500" Width="400" Background="#FFEBEE" Canvas.Top="100">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <Button Name="ImageToggle" Click="ImageToggle_Click" Style="{DynamicResource RoundedImageButtonStyle}" Height="70" Width="70" Margin="0 0 15 0">
+                        <Ellipse Width="60" Height="60">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="{Binding PersonImage,Converter={StaticResource StringToImageConverter}}" />
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Button>
+                    <TextBox Name="Name" Height="60" Width="290" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="Name_LostFocus" Text="{Binding PersonName,Mode=TwoWay}" PreviewTextInput="Validate" VerticalAlignment="Center" FontSize="18"></TextBox>
+                </StackPanel>
+               
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Name="Address1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"  FontSize="18" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="Address1_LostFocus" Text="{Binding PersonAddress1,Mode=TwoWay}"  PreviewTextInput="Validate"></TextBox>
+                    <TextBox Name="Address2" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"  FontSize="18" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="Address2_LostFocus" Text="{Binding PersonAddress2,Mode=TwoWay}"  PreviewTextInput="Validate"></TextBox>
+                    <TextBox Name="City" Grid.Column="0" Grid.Row="2"  FontSize="18" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="City_LostFocus" Text="{Binding PersonCity,Mode=TwoWay}"  PreviewTextInput="Validate" Margin="0 0 10 0"></TextBox>
+                    <TextBox Name="Province" Grid.Column="1" Grid.Row="2"  FontSize="18" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="Province_LostFocus" Text="{Binding PersonProvince,Mode=TwoWay}"  PreviewTextInput="Validate"></TextBox>
+                    <TextBox Name="PostalCode" Grid.Column="0" Grid.Row="3"  FontSize="18" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="PostalCode_LostFocus" Text="{Binding PersonPostalCode,Mode=TwoWay}"  PreviewTextInput="Validate" Margin="0 0 10 0"></TextBox>
+                    <TextBox Name="Country" Grid.Column="1" Grid.Row="3"  FontSize="18" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="Country_LostFocus" Text="{Binding PersonCountry,Mode=TwoWay}"  PreviewTextInput="Validate"></TextBox>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                     <TextBox Name="Age" Grid.Column="1" Height="60" FontSize="18" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="Age_LostFocus" Text="{Binding PersonAge,Mode=TwoWay}" PreviewTextInput="Validate" ></TextBox>
+                    <TextBox Name="PhoneNumber" Grid.Column="0" Height="60" FontSize="18" Foreground="#50000000" GotFocus="Input_GotFocus" LostFocus="PhoneNumber_LostFocus" Text="{Binding PersonPhoneNumber,Mode=TwoWay}" PreviewTextInput="Validate" Margin="0 0 10 0"></TextBox>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Name="Back" Height="60" Width="150"  Content="Back" Click="Back_Click"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Name="Save" Height="60" Width="150"  Content="Save" Click="Save_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
+
+
+    </Canvas>
+</Page>

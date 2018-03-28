@@ -1,0 +1,29 @@
+﻿<!--Assignment 4 | Group 2 | Tahira, Ashley, Abhinav, Parmeet, Haoyang-->
+    <Window x:Class="Workshop.ConfigTool"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Workshop"
+        mc:Ignorable="d"
+        Title="ConfigTool" Height="800" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Button Style="{StaticResource SaveToJson}" x:Name="ConfigJsonSave" Grid.Column="1" Grid.Row="2" Content="Save" HorizontalAlignment="Center" VerticalAlignment="Center" Width="90" Height="30" Click="ConfigSave_Click" />
+        <DataGrid Style="{StaticResource ConfigToolData}" ItemsSource="{Binding Workshops}" Grid.Column="0" Grid.Row="1" Height="Auto" ColumnWidth="*" MaxColumnWidth="190" />
+        <DataGrid Style="{StaticResource ConfigToolData}" ItemsSource="{Binding Location}" Grid.Column="1" Grid.Row="1" Height="Auto" ColumnWidth="*" MaxColumnWidth="190"/>
+        <Label Style="{StaticResource LabelDesignDataGrid}" Grid.Column="0" Grid.Row="0" Content="Workshop" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="90"  />
+        <Label Style="{StaticResource LabelDesignDataGrid}" Grid.Column="1" Grid.Row="0" Content="Location" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="90"/>
+    </Grid>
+</Window>

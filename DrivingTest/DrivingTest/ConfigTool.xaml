@@ -1,0 +1,76 @@
+﻿<!--Assignment 8 | Group 2 | Tahira, Ashley, Abhinav, Parmeet, Haoyang-->
+<Window x:Class="DrivingTest.ConfigTool"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize"
+        x:Name="_Configtool"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingTest"
+        mc:Ignorable="d"
+        Title="ConfigTool" Height="800" Width="600">
+    <Grid Margin="0,10,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <DataGrid Style="{StaticResource ConfigToolData}" ItemsSource="{Binding TestAnswersList}" Grid.Column="1" Grid.Row="1" Height="Auto" ColumnWidth="*" MaxColumnWidth="190" />
+        <Label Style="{StaticResource LabelDesign}" Grid.Column="1" Grid.Row="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Master Driving Test Answers" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="180" />
+        <DataGrid x:Name="DgvStudentAnswers" Style="{StaticResource ConfigToolData}"  ItemsSource="{Binding StudentAnswersList}" Grid.Column="3" Grid.Row="1" Height="Auto" ColumnWidth="*" MaxColumnWidth="190" IsReadOnly="True" />
+        <Label Style="{StaticResource LabelDesign}" Grid.Column="3" Grid.Row="0" Content="Student Answers" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="164" />
+        <Label Style="{StaticResource LabelDesign}" Content="Grade" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="5" HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="170"/>
+        <Grid Grid.Column="5" HorizontalAlignment="Left" Height="615" Grid.Row="1" VerticalAlignment="Top" Width="184">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label Style="{StaticResource LabelDesign}" Content="Correct Answers:" Grid.Column="5" HorizontalAlignment="Center" Height="40" Grid.Row="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="160"/>
+            <TextBox Style="{StaticResource TextboxDesigns}" x:Name="TxtCorrectAnswer" IsReadOnly="True" HorizontalAlignment="Center" Height="30" Grid.Row="2" TextWrapping="Wrap" Text="{Binding TxtCorrectAnswer, Mode=OneWay, TargetNullValue=''}" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="140"/>
+            <Label Style="{StaticResource LabelDesign}" Content="Mark Percentage:" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="40" Width="162" />
+            <TextBox Style="{StaticResource TextboxDesigns}" VerticalContentAlignment="Center" x:Name="TxtMarkPercentage" IsReadOnly="True" HorizontalAlignment="Center" Height="30" Grid.Row="4" TextWrapping="Wrap" Text="{Binding TxtMarkPercentage, Mode=OneWay, TargetNullValue=''}" VerticalAlignment="Center" Width="140"/>
+            <TextBox Style="{StaticResource TextboxDesigns}" VerticalContentAlignment="Center" x:Name="TxtPassingMark" IsReadOnly="True" HorizontalAlignment="Center" Height="30" Grid.Row="6" TextWrapping="Wrap" Text="{Binding TxtPassingMark, Mode=OneWay, TargetNullValue=''}" VerticalAlignment="Center" Width="140"/>
+            <Button x:Name="Calculate" Style="{StaticResource CalculateButton}" Content="Calculate" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="40" Click="Calculate_Click"/>
+            <Grid HorizontalAlignment="Left" Height="77" Grid.Row="5" VerticalAlignment="Top" Width="184">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label Style="{StaticResource LabelDesign}"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Passing Percentage" HorizontalAlignment="Center" Grid.Row="0" VerticalAlignment="Center" Height="40" Width="180" />
+                <Label Style="{StaticResource LabelDesign}"  VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="75%" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="40" Width="180" />
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" HorizontalAlignment="Center" Height="67" Grid.Row="2" VerticalAlignment="Center" Width="175">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource ConfigSaveButton}" x:Name="ConfigJsonSave" Grid.Column="0" Content="Save" HorizontalAlignment="Center" VerticalAlignment="Center" Width="140" Height="40" Click="ConfigSave_Click" />
+        </Grid>
+        <Grid Grid.Column="3" HorizontalAlignment="Center" Height="75" Grid.Row="2" VerticalAlignment="Center" Width="175">
+            <Button Style="{StaticResource ConfigSaveButton}" x:Name="ClearStudentEntert" Content="Clear Student Entry" HorizontalAlignment="Center" VerticalAlignment="Center" Width="190" Height="40" Click="ClearStudentEntert_Click" Margin="-8,18,-8,18" />
+        </Grid>
+        <Grid Grid.Column="5" HorizontalAlignment="Center" Height="75" Grid.Row="2" VerticalAlignment="Center" Width="175">
+            <Button Style="{StaticResource ClearButton}" x:Name="CloseWindow" Content="Close Window" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="40" Click="CloseWindow_Click"/>
+        </Grid>
+    </Grid>
+</Window>

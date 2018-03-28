@@ -1,0 +1,101 @@
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\Price Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\App.baml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\DarkTheme.baml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\LightTheme.baml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\Price Calculator.csproj.GenerateResource.Cache
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\Price Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.exe.config
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.exe
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.pdb
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\App.g.cs
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\App.baml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\DarkTheme.baml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\LightTheme.baml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\MainWindow.baml
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.g.resources
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.GenerateResource.Cache
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.exe
+C:\Users\Chantelle\Desktop\Group 2 - Project 2\Group 2 - Project 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.pdb
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.exe.config
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.exe
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.pdb
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\App.g.cs
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\App.baml
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\DarkTheme.baml
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\LightTheme.baml
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\MainWindow.baml
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.g.resources
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.GenerateResource.Cache
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.exe
+C:\Users\Chantelle\Desktop\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.pdb
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.exe.config
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.exe
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.pdb
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csprojResolveAssemblyReference.cache
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\App.g.cs
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\App.baml
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\DarkTheme.baml
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\LightTheme.baml
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\MainWindow.baml
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.g.resources
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.GenerateResource.Cache
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.CoreCompileInputs.cache
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.exe
+C:\Users\rosem\Downloads\Group 2 - Assingment 2\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.pdb
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.exe.config
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.exe
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\bin\Debug\WpfApp1.pdb
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\App.g.cs
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\App.baml
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\DarkTheme.baml
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\LightTheme.baml
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\MainWindow.baml
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.g.resources
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.GenerateResource.Cache
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.exe
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\WpfApp1.pdb
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-2 - Completed\Price Calculator\PriceCalculator\PriceCalculator\obj\Debug\Price Calculator.csproj.CopyComplete

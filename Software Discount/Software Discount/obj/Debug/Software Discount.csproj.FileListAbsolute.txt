@@ -1,0 +1,96 @@
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\bin\Debug\Software Discount.exe.config
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\bin\Debug\Software Discount.exe
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\bin\Debug\Software Discount.pdb
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software Discount.csprojResolveAssemblyReference.cache
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\MainWindow.g.cs
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\App.g.cs
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.cache
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.lref
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\MainWindow.baml
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software Discount.g.resources
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software_Discount.Properties.Resources.resources
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.GenerateResource.Cache
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.CoreCompileInputs.cache
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software Discount.exe
+C:\Users\Abhinav Pathak\source\repos\Software Discount\Software Discount\obj\Debug\Software Discount.pdb
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.exe.config
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.exe
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.pdb
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csprojResolveAssemblyReference.cache
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\MainWindow.g.cs
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\App.g.cs
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.cache
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.lref
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\MainWindow.baml
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.g.resources
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software_Discount.Properties.Resources.resources
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.GenerateResource.Cache
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.CoreCompileInputs.cache
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.exe
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.pdb
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\App.baml
+C:\Users\Chantelle\Desktop\GitHub Saves\Software Discount\Software Discount\Software Discount\obj\Debug\CalculatorTheme.baml
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.exe.config
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.exe
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.pdb
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csprojResolveAssemblyReference.cache
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\MainWindow.g.cs
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\App.g.cs
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.cache
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.lref
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\App.baml
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\CalculatorTheme.baml
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\MainWindow.baml
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.g.resources
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software_Discount.Properties.Resources.resources
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.GenerateResource.Cache
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.CoreCompileInputs.cache
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.exe
+C:\Users\Chantelle\Desktop\Thing\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.pdb
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.exe.config
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.exe
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\bin\Debug\Software Discount.pdb
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csprojResolveAssemblyReference.cache
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\MainWindow.g.cs
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\App.g.cs
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.cache
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.lref
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\App.baml
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\CalculatorTheme.baml
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\MainWindow.baml
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.g.resources
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software_Discount.Properties.Resources.resources
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.GenerateResource.Cache
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.CoreCompileInputs.cache
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.exe
+C:\Users\Abhinav Pathak\Documents\Software_Discount_Group2_Assignment3\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.pdb
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csprojResolveAssemblyReference.cache
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\MainWindow.g.cs
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\App.g.cs
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.cache
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.lref
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\App.baml
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\CalculatorTheme.baml
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\MainWindow.baml
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.g.resources
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\Software_Discount.Properties.Resources.resources
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.GenerateResource.cache
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.CoreCompileInputs.cache
+C:\Users\Abhinav Pathak\Documents\College Resources\PROG8010 - Programming - Software Development Techniques\Assignment-3 - Completed\Software Discount\Software Discount\Software Discount\obj\Debug\Software Discount.pdb
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\bin\Debug\Software Discount.exe.config
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\bin\Debug\Software Discount.exe
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\bin\Debug\Software Discount.pdb
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software Discount.csprojResolveAssemblyReference.cache
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\MainWindow.g.cs
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\App.g.cs
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.cache
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software Discount_MarkupCompile.lref
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\App.baml
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\CalculatorTheme.baml
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\MainWindow.baml
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software Discount.g.resources
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software_Discount.Properties.Resources.resources
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.GenerateResource.cache
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software Discount.csproj.CoreCompileInputs.cache
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software Discount.exe
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Software Discount\Software Discount\obj\Debug\Software Discount.pdb

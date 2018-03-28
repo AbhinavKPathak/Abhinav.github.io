@@ -1,0 +1,1904 @@
+﻿<Page x:Class="DrivingTest.Test"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:DrivingTest"
+      mc:Ignorable="d" 
+      d:DesignHeight="850" d:DesignWidth="1452"
+      Title="Test">
+    <Page.Resources>
+        <local:RadioButtonValueConverter x:Key="RadioButtonValueConverter" />
+    </Page.Resources>
+    <Grid>
+        <Grid HorizontalAlignment="Center" Height="850" VerticalAlignment="Center" Width="1452">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="20" />
+            </Grid.ColumnDefinitions>
+
+            <!--***********************************************Column 1***************************************************
+            *****************************************************************************************************************-->
+            <Border x:Name="Column1Border" BorderThickness="1" BorderBrush="Black" Grid.Column="1" Grid.Row="1">
+                <Grid x:Name="Column1" HorizontalAlignment="Center" Height="750" VerticalAlignment="Center" Width="474" Margin="-1,-1,-11,-1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <!--Row 0 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="0" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Style="{StaticResource LabelDesignDataGrid1}" Content="1. What is the max speed in a school zone?" HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="460" Margin="5,10,5,0"/>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="10" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid x:Name="Q1AGrid" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q1A" GroupName="RadioGroup01" Style="{StaticResource RadioButtonStyle}" HorizontalContentAlignment="Center" Opacity="0"  HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q1Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='1-A'}"/>
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" Opacity="100" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="40" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q1BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q1B" GroupName="RadioGroup01" Style="{StaticResource RadioButtonStyle}" HorizontalContentAlignment="Center" Opacity="0" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q1Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='1-B'}"/>
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="45" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q1CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q1C" GroupName="RadioGroup01" Style="{StaticResource RadioButtonStyle}" HorizontalContentAlignment="Center" Opacity="0" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q1Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='1-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="45" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q1DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q1D" GroupName="RadioGroup01" Style="{StaticResource RadioButtonStyle}" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q1Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='1-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 0-->
+                    <!--Row 1 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="1" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Image Grid.Column="0" HorizontalAlignment="Right" Source="Images/Image1.png" />
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="2. What is this Image?" HorizontalAlignment="Left" Height="auto" Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="180" Grid.ColumnSpan="2" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="A flagger on duty." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q2AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q2A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup02" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q2Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='2-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Slow down and obey flagger." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q2BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q2B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup02" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q2Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='2-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Reduce speed." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid  Name="Q2CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q2C" Style="{StaticResource RadioButtonStyle}"  GroupName="RadioGroup02" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q2Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='2-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Warns of road work ahead." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q2DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q2D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup02" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q2Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='2-D'}"/>
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 1-->
+                    <!--Row 2 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="2" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="3. You must report an accident to the police if:"  HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="470" Grid.ColumnSpan="4" Margin="0,6" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="All answers are correct." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q3AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q3A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup03" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q3Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='3-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="If someones has been hurt or killed." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q3BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q3B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup03" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q3Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='3-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="The damage to property is over $2000." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q3CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q3C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup03" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q3Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='3-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="The damage of vehicles is over $2000." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q3DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q3D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup03" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q3Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='3-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 2-->
+                    <!--Row 3 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="2" Height="110" VerticalAlignment="Center" Width="462" Margin="2,106,10,105" Grid.RowSpan="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="467*" />
+                                <ColumnDefinition Width="3*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="4. When approaching a construction area, drivers should:" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="470" Grid.ColumnSpan="2" Margin="0,6" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Slow down and yield the right-of-way." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q4AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q4A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup04" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q4Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='4-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Speed up and get out quicker." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q4BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q4B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup04" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q4Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='4-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Honk hork to let workers know." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q4CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q4C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup04" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q4Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='4-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Watch for children." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q4DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q4D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup04" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q4Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='4-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 3-->
+                    <!--Row 4 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="4" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="5. Never change lanes in traffic without:" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="320" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Decrease speed and use signal." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q5AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q5A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup05" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q5Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='5-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Blow horn and look to rear." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q5BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q5B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup05" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q5Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='5-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Give proper single and safe to move." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q5CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q5C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup05" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q5Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='5-C'}"  />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Honk horn and slow down." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q5DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q5D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup05" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q5Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='5-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 4-->
+                    <!--Row 5 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="4" Height="110" VerticalAlignment="Center" Width="462" Margin="2,106,10,106" Grid.RowSpan="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="6. When changing lanes on multi-lanw highway..." HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="470" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Check mirrors and signal direction." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q6AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q6A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup06" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q6Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='6-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Honk at other drivers." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q6BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q6B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup06" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q6Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='6-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Move in any direction as fast as possible." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q6CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q6C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup06" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q6Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='6-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Activate the emergency signals." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q6DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q6D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup06" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q6Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='6-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 5-->
+                    <!--Row 6 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="6" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="7. If you miss an exoressway exit, what should you do?" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="430"/>
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Make a U-turn." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q7AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q7A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup07" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q7Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='7-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Continue straight and exit at next ramp." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q7BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q7B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup07" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q7Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='7-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="If there are no cars, you may back up." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q7CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q7C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup07" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q7Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='7-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Stop on the shoulder and check map." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q7DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q7D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup07" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q7Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='7-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 6-->
+                </Grid>
+            </Border>
+            <!--End of Column 1-->
+            <!--*********************Column 2*******************************************
+            ****************************************************************************-->
+            <Border x:Name="Column2Border" BorderThickness="1" BorderBrush="Black" Grid.Column="3" Grid.Row="1">
+                <Grid x:Name="Column2" HorizontalAlignment="Center" Height="750" VerticalAlignment="Center" Width="464" Margin="-1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <!--Row 0 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="0" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="8. If you become very tired while driving, you should:"  HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="470" Margin="0,10,0,0" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Stop and rest." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q8AGrid" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q8A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup08" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q8Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='8-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" Opacity="100" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Drive faster to your destination." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q8BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q8B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup08" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q8Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='8-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Drink coffee" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q8CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q8C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup08" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q8Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='8-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Open your windows to allow fresh air in." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q8DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q8D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup08" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q8Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='8-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 0-->
+                    <!--Row 1 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="1" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Image Grid.Column="0" HorizontalAlignment="Right" Source="Images/Image3.png" />
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="9. What is this Image?" HorizontalAlignment="Left" Height="auto" Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="180" Grid.ColumnSpan="2" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="High ends; move into right-hand lane." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q9AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q9A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup09" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q9Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='9-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="You may exit in the right-hand lane." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q9BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q9B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup09" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q9Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='9-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="There is a two-way left turn ahead." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q9CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q9C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup09" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q9Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='9-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Center lane must exit." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q9DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q9D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup09" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q9Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='9-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 1-->
+                    <!--Row 2 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="2" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="10. Snow removal vehicles flashing lights are..."  HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="470" Grid.ColumnSpan="4" Margin="0,6" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Red." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q10AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q10A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup10" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q10Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='10-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Yellow." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q10BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q10B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup10" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q10Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='10-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Orange." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q10CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q10C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup10" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q10Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='10-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Blue." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q10DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q10D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup10" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q10Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='10-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 2-->
+                    <!--Row 3 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="3" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="11. Approaching an interscetion and see red lights: You must" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="470" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Change lanes." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q11AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q11A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup11" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q11Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='11-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Come to a complete stop." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q11BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q11B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup11" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q11Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='11-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Make a U-turn." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q11CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q11C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup11" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q11Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='11-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Proceed with caution." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q11DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q11D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup11" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q11Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='11-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 3-->
+                    <!--Row 4 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="4" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="12. When may you lend your driver's licence to others?" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="438" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="In emergencies." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q12AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q12A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup12" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q12Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='12-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Someone who is learning to drive." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q12BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q12B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup12" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q12Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='12-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Never." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q12CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q12C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup12" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q12Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='12-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="For identification purposes only." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q12DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q12D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup12" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q12Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='12-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 4-->
+                    <!--Row 5 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="5" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Image Grid.Column="0" HorizontalAlignment="Right" Source="Images/Image4.png" />
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="13. What is this Image?" HorizontalAlignment="Left" Height="auto" Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="190" Grid.ColumnSpan="2" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="School with playground." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q13AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q13A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup13" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q13Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='13-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Hidden intersection." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q13BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q13B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup13" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q13Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='13-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Move in any direction as fast as possible." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q13CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q13C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup13" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q13Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='13-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="School zone." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q13DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q13D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup13" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q13Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='13-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 5-->
+                    <!--Row 6 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="6" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="14. Using a cellular phone while driving..." HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="430"/>
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Increases the risk of collision." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q14AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q14A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup14" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q14Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='14-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Is a good way to multi-task." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q14BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q14B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup14" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q14Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='14-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Should be avoided, but is o.k." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q14CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q14C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup14" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q14Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='14-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Is quite acceptable." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q14DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q14D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup14" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q14Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='14-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 6-->
+                </Grid>
+            </Border>
+            <!--End of Column 1-->
+            <!--***********************************************Column 3***************************************************
+            *****************************************************************************************************************-->
+            <Border x:Name="Column3Border" BorderThickness="1" BorderBrush="Black" Grid.Column="5" Grid.Row="1">
+                <Grid x:Name="Column3" HorizontalAlignment="Center" Height="750" VerticalAlignment="Center" Width="464">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <!--Row 0 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="0" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Style="{StaticResource LabelDesignDataGrid1}" Content="15. Which of the following statements is NOT true?" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="460" />
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Do not follow to closely behind cyclists" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q15AGrid" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q15A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup15" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q15Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='15-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" Opacity="100" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Leave one metre distance when passing" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q15BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q15B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup15" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q15Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='15-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Stay behind and turn when clear" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q15CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q15C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup15" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q15Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='15-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Cyclists ride against traffic." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q15DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q15D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup15" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q15Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='15-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 0-->
+                    <!--Row 1 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="1" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Style="{StaticResource LabelDesignDataGrid1}" Content="16. If you want to pass a motorcycle, you should:" HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="460"/>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Turn on your high-beams to pass." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q16AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q16A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup16" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q16Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='16-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Use half of their lane to pass." Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q16BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q16B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup16" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q16Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='16-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Pass just as you would another car." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q16CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q16C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup16" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q16Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='16-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Honk your horn before you pass." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q16DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q16D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup16" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q16Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='16-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 1-->
+                    <!--Row 2 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="2" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Image Grid.Column="0" HorizontalAlignment="Right" Source="Images/Image5.png" />
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="17. What does this sign indicate?" HorizontalAlignment="Left" Height="auto" Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="262" Grid.ColumnSpan="2" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Shows directions to nearby cities." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q17AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q17A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup17" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q17Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='17-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Shows distances to towns or cities." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q17BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q17B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup17" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q17Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='17-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Upcoming roundabout exits." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q17CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q17C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup17" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q17Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='17-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Indicates an upcoming railway crossing." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q17DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q17D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup17" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q17Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='17-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 2-->
+                    <!--Row 3 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="3" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="18. A 'No Parking' sign at a certain location means:" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="470" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="You may stop if driver remains." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q18AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q18A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup18" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q18Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='18-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="You may not park your vehicle here." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q18BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q18B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup18" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q18Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='18-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Stop temporarily for 7 hour period." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q18CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q18C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup18" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q18Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='18-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Park for less than sixty minutes." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q18DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q18D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup18" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q18Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='18-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 3-->
+                    <!--Row 4 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="4" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="19. When can a driver's licence be cancelled?" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="470" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Failure to pass driver re-examination." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q19AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q19A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup19" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q19Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='19-A'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Posses an alternate driver's licence." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q19BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q19B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup19" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q19Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='19-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Racing on city streets." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q19CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q19C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup19" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q19Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='19-C'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Any or all of the above." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q19DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q19D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup19" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q19Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='19-D'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 4-->
+                    <!--Row 5 -->
+                    <Grid HorizontalAlignment="Center" Grid.Row="5" Height="110" VerticalAlignment="Center" Width="470">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalAlignment="Center" Height="40" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Image Grid.Column="0" HorizontalAlignment="Right" Source="Images/Image2.png" />
+                            <Label Style="{StaticResource LabelDesignDataGrid1}" Content="20. What does this sign indicate?" HorizontalAlignment="Left" Height="auto" Grid.Column="2" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="262" Grid.ColumnSpan="2" />
+                        </Grid>
+                        <Grid HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Height="60" VerticalAlignment="Center" Width="470">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="5" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="4" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--A Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Water may be flowing over the road." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q20AGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q20A" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup20" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q20Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='20-A'}" Click="EnableSubmit" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/A.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--B Question-->
+                            <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="There is a consturction zone ahead." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q20BGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q20B" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup20" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q20Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='20-B'}" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/B.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--C Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="0" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="There is a fire hall ahead." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q20CGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q20C" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup20" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Height="30" Width="20" Checked="RadioButton_Checked" IsChecked="{Binding Path=Q20Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='20-C'}" Click="EnableSubmit" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/C.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                            <!--D Question-->
+                            <Grid Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Height="30" VerticalAlignment="Center" Width="225">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Style="{StaticResource LabelStyle1}" Content="Do not enter." Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="200"/>
+                                <Grid Name="Q20DGrid" Grid.Column="0" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="20">
+                                    <RadioButton x:Name="Q20D" Style="{StaticResource RadioButtonStyle}" GroupName="RadioGroup20" HorizontalContentAlignment="Center" Opacity="0" Content="" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Height="30" Width="20" Checked="RadioButton_Checked" Margin="3,0,-3,-7" IsChecked="{Binding Path=Q20Answer, Converter={StaticResource RadioButtonValueConverter}, ConverterParameter='20-D'}" Click="EnableSubmit" />
+                                    <Grid.Background>
+                                        <ImageBrush ImageSource="Images/D.png" />
+                                    </Grid.Background>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <!--End of Row 5-->
+                </Grid>
+            </Border>
+            <!--End of Column 3-->
+            <!--************************ BUTTONS *********************************************-->
+            <Grid HorizontalAlignment="Left" Height="75" Grid.Row="2"  VerticalAlignment="Top" Width="1435" Grid.ColumnSpan="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                </Grid.RowDefinitions>
+                <Button x:Name="BtnSubmit" Grid.Column="1" Grid.Row="1" Content="Submit" IsEnabled="False" Style="{StaticResource Submit}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="50" Click="BtnSubmit_Click"  Grid.RowSpan="2" />
+                <Button x:Name="BtnDetermineGrade" IsEnabled="False" Content="Calculate Grade" Style="{StaticResource Submit}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Height="50" Click="BtnDetermineGrade_Click" Grid.RowSpan="2" Grid.Row="1" Grid.Column="2" />
+                <Label Style="{StaticResource WarningMessage}" x:Name="WarningMessage"  Content="Fill in all answers to ENABLE Submit" FontSize="20" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Opacity="100" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="50" Grid.RowSpan="2" Width="380" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

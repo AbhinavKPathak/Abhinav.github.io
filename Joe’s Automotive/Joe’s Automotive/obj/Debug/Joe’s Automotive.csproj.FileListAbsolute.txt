@@ -1,0 +1,14 @@
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\bin\Debug\Joe’s Automotive.exe.config
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\bin\Debug\Joe’s Automotive.exe
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\bin\Debug\Joe’s Automotive.pdb
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\Joe’s Automotive.csprojResolveAssemblyReference.cache
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\MainWindow.baml
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\MainWindow.g.cs
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\App.g.cs
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\Joe’s Automotive_MarkupCompile.cache
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\Joe’s Automotive.g.resources
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\Joe_s_Automotive.Properties.Resources.resources
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\Joe’s Automotive.csproj.GenerateResource.cache
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\Joe’s Automotive.csproj.CoreCompileInputs.cache
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\Joe’s Automotive.exe
+C:\Users\Abhinav Pathak\Documents\GitHub\Abhinav.github.io\Joe’s Automotive\Joe’s Automotive\obj\Debug\Joe’s Automotive.pdb

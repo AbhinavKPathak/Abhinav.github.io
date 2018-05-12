@@ -1,0 +1,10 @@
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\bin\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.deps.json
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\bin\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.runtimeconfig.json
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\bin\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.runtimeconfig.dev.json
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\bin\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.dll
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\obj\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.csproj.CoreCompileInputs.cache
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\obj\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.AssemblyInfoInputs.cache
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\obj\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.AssemblyInfo.cs
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\bin\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.pdb
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\obj\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.dll
+C:\Users\Abhinav Pathak\Desktop\Shopify_Back-End_Challenge\Shopify_Back-End_Challenge\obj\Debug\netcoreapp2.0\Shopify_Back-End_Challenge.pdb

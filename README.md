@@ -1,4 +1,3 @@
-# Abhinav.github.io
 C# assignment projects
 
 All projects are created with C# using MVVM. 
